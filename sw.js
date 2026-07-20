@@ -8,6 +8,7 @@ self.addEventListener('activate', (e) => e.waitUntil(self.clients.claim()))
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url)
   if (e.request.method !== 'GET' || url.origin !== self.location.origin) return
+  if (url.pathname.endsWith('.apk')) return // descargas grandes: sin cachear
   e.respondWith(
     caches.open(CACHE).then(async (cache) => {
       try {
