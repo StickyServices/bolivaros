@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — BolívarOS</title>
+  <link rel="icon" type="image/png" href="./icon-192.png" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #070b14; color: #f4f7ff;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.65; font-size: 16px;
+      padding: 40px 20px 80px;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    .logo { font-size: 34px; color: #38e1ff; }
+    h1 { font-size: 26px; margin: 10px 0 4px; }
+    .fecha { color: #6b7488; font-size: 14px; margin-bottom: 30px; }
+    h2 { font-size: 19px; margin: 28px 0 10px; color: #38e1ff; }
+    p, li { color: #aab3c7; margin-bottom: 10px; }
+    ul { padding-left: 22px; }
+    strong { color: #f4f7ff; }
+    .destacado {
+      background: rgba(56, 225, 255, 0.08);
+      border: 1px solid rgba(56, 225, 255, 0.25);
+      border-radius: 12px; padding: 16px 18px; margin: 20px 0;
+    }
+    a { color: #38e1ff; }
+    footer { margin-top: 40px; color: #6b7488; font-size: 13px; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo">◈</div>
+    <h1>Política de Privacidad de BolívarOS</h1>
+    <div class="fecha">Última actualización: 20 de julio de 2026 · Sticky Services</div>
+
+    <div class="destacado">
+      <p><strong>La versión corta:</strong> BolívarOS no recolecta, no almacena y no comparte
+      ningún dato personal tuyo. Toda tu información financiera vive únicamente en tu
+      dispositivo. No tenemos servidores, no tenemos cuentas de usuario, no tenemos manera
+      de ver tus datos — y así está diseñado a propósito.</p>
+    </div>
+
+    <h2>1. Datos que recopilamos</h2>
+    <p><strong>Ninguno.</strong> Las cuentas, movimientos, presupuestos, deudas, recurrentes,
+    PIN y cualquier otra información que registras en BolívarOS se guardan exclusivamente en
+    el almacenamiento local de tu dispositivo. Nunca se envían a Sticky Services ni a terceros.
+    No usamos analítica, publicidad, rastreadores ni identificadores de usuario.</p>
+
+    <h2>2. Conexiones a internet que hace la app</h2>
+    <p>BolívarOS se conecta a internet únicamente para consultar cotizaciones públicas:</p>
+    <ul>
+      <li><strong>Banco Central de Venezuela</strong> (bcv.org.ve) y <strong>dolarapi.com</strong>: tasas oficiales del dólar y el euro.</li>
+      <li><strong>Binance</strong>: tasa del mercado P2P (datos públicos).</li>
+    </ul>
+    <p>Estas consultas no incluyen ningún dato personal tuyo: son las mismas peticiones que
+    haría tu navegador al visitar esas páginas.</p>
+
+    <h2>3. Conexión opcional con Binance</h2>
+    <p>Si decides conectar tu cuenta de Binance, tú creas una clave API de <strong>solo
+    lectura</strong> y la pegas en la app. Esa clave:</p>
+    <ul>
+      <li>Se guarda <strong>solo en tu dispositivo</strong>, nunca en servidores de Sticky Services (no existen).</li>
+      <li>Se usa únicamente para consultar tus balances directamente con Binance, mediante conexión cifrada (HTTPS) desde tu propio dispositivo.</li>
+      <li>No permite mover fondos: la app además rechaza claves con permisos de retiro o trading.</li>
+      <li>Se elimina cuando desconectas Binance o desinstalas la app, y <strong>nunca</strong> se incluye en los respaldos.</li>
+    </ul>
+
+    <h2>4. Permisos de la app</h2>
+    <ul>
+      <li><strong>Internet</strong>: para consultar las tasas de cambio.</li>
+      <li><strong>Notificaciones</strong> (opcional): para el recordatorio diario de la tasa. Se puede desactivar en Ajustes.</li>
+    </ul>
+
+    <h2>5. Respaldos</h2>
+    <p>La función de respaldo genera un archivo que tú decides dónde guardar. Ese archivo lo
+    controlas tú, no pasa por ningún servidor nuestro y nunca contiene tus claves de Binance.</p>
+
+    <h2>6. Eliminación de tus datos</h2>
+    <p>Como todos los datos viven en tu dispositivo, para eliminarlos basta con borrar los
+    datos de la app o desinstalarla. No queda ninguna copia en ningún servidor porque nunca
+    salieron de tu equipo.</p>
+
+    <h2>7. Menores de edad</h2>
+    <p>BolívarOS no está dirigida a menores de 13 años y no recopila datos de ningún usuario,
+    incluidos los menores.</p>
+
+    <h2>8. Cambios a esta política</h2>
+    <p>Si esta política cambia, publicaremos la versión nueva en esta misma dirección con su
+    fecha de actualización. Un cambio nunca hará que la app empiece a recolectar datos sin
+    avisarlo claramente.</p>
+
+    <h2>9. Contacto</h2>
+    <p>Preguntas sobre esta política: a través del repositorio oficial en
+    <a href="https://github.com/StickyServices/bolivaros">github.com/StickyServices/bolivaros</a>.</p>
+
+    <footer>◈ BolívarOS · © 2026 Sticky Services · Todos los derechos reservados<br />
+    <a href="./">← Volver a la app</a></footer>
+  </main>
+</body>
+</html>
